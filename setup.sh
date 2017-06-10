@@ -1,5 +1,5 @@
 psql -U postgres --file=setup.sql
 bundle install
-rake db:create
-rake db:migrate
-rake db:seed
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake db:seed
