@@ -7,6 +7,5 @@ PostgreSQL +9.5
 # Running
 
 1. `setup.sh`
-2. `rails s`
+2. `bundle exec rails s`
 3.  Open http://localhost:3000
-
