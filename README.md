@@ -1,8 +1,8 @@
 # Requisites
 
-Ruby +2.2
-Bundler +1.14
-PostgreSQL +9.5
+- Ruby 2.2 or 2.3
+- Bundler >= 1.14
+- PostgreSQL >= 9.5
 
 # Running
 
