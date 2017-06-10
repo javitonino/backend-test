@@ -14,6 +14,8 @@ users << User.create(name: 'Eva')
 
 categories = %w{social politics nature}
 
-for i in 1..10000
-  Map.create(title: "Untitled Map #{i}", category: categories[Random.rand(categories.count)], mapviews: Random.rand(1000), user: users[Random.rand(users.count - 1)])
+ActiveRecord::Base.transaction do
+  for i in 1..10000
+    Map.create(title: "Untitled Map #{i}", category: categories[Random.rand(categories.count)], mapviews: Random.rand(1000), user: users[Random.rand(users.count - 1)])
+  end
 end
